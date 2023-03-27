@@ -37,7 +37,12 @@
                     <input type="text" name="system.critDmg" value="{{system.critDmg}}" data-dtype="String" />
                 </div>
                 <div class="resource">
-                    <label class="resource-label">Critical Effect</label>
+                    <label class="resource-label">Damage Type</label>
+                    <input type="text" name="system.damageType" value="{{system.damageType}}" data-dtype="String" />
+                </div>
+                <div class="resource">
+                    <!--<label class="resource-label">Critical Effect</label>-->
+                    <label class="resource-label">Wound Type</label>
                     <input type="text" name="system.critEffect" value="{{system.critEffect}}" data-dtype="String" />
                 </div>
                 <div class="resource">
@@ -47,6 +52,15 @@
                 <div class="resource">
                     <label class="resource-label">Range</label>
                     <input type="text" name="system.ranges.value" value="{{system.ranges.value}}" data-dtype="String" />
+                </div>
+                    <div class="resource">
+                    <label class="resource-label">Damage Advantage</label>
+                    <input type="checkbox" name="system.damageAdvantage" {{checked system.damageAdvantage}} data-dtype="Boolean" />
+                </div>
+                </div>
+                    <div class="resource">
+                    <label class="resource-label">Wound Advantage</label>
+                    <input type="checkbox" name="system.woundAdvantage" {{checked system.woundAdvantage}} data-dtype="Boolean" />
                 </div>
                 <hr />
             </div>

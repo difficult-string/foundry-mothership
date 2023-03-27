@@ -4,18 +4,26 @@
         <div class="header-fields">
             <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name"/></h1>
             <div class="grid grid-2col">
-              <div class="resource">
-                <label class="resource-label">Save Bonus</label>
-                  <input type="text" name="system.bonus" value="{{system.bonus}}" data-dtype="Number"/>
-              </div>
-              <div class="resource">
-                <label class="resource-label">Features</label>
-                  <input type="text" name="system.features" value="{{system.features}}" data-dtype="String"/>
-              </div>
-              <div class="resource">
-                <label class="resource-label">Equipped</label>
-                <input type="checkbox" name="system.equipped" data-dtype="Boolean" {{checked system.equipped}}/>
-            </div>
+                <div class="resource">
+                    <label class="resource-label">Armor Points</label>
+                    <input type="text" name="system.bonus" value="{{system.bonus}}" data-dtype="Number"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Features</label>
+                    <input type="text" name="system.features" value="{{system.features}}" data-dtype="String"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Speed Checks</label>
+                    <input type="text" name="system.speedcheck" value="{{system.speedcheck}}" data-dtype="String"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Oxygen supply (hours)</label>
+                    <input type="text" name="system.o2supply" value="{{system.o2supply}}" data-dtype="Number"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Equipped</label>
+                    <input type="checkbox" name="system.equipped" data-dtype="Boolean" {{checked system.equipped}}/>
+                </div>
             </div>
         </div>
     </header>
