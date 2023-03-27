@@ -1,7 +1,7 @@
 {
-  "id": "mosh",
-  "title": "MoSh - Unofficial Mothership",
-  "description": "The unofficial Mothership system for FoundryVTT.",
+  "id": "mosh - local fork",
+  "title": "MoSh - Unofficial Mothership - local fork",
+  "description": "The unofficial Mothership system for FoundryVTT. - local fork",
   "version": "0.3.4",
   "esmodules": [
     "module/mosh.js"
@@ -33,13 +33,13 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "https://github.com/Futil/foundry-mothership",
-  "manifest": "https://raw.githubusercontent.com/Futil/foundry-mothership/master/system.json",
-  "download": "https://github.com/Futil/foundry-mothership/archive/master.zip",
+  "manifest": "https://raw.githubusercontent.com/difficult-string/foundry-mothership/master/system.json",
+  "download": "https://github.com/difficult-string/foundry-mothership/archive/master.zip",
   "license": "LICENSE.txt",
 
   "authors": [
     {
-      "name": "Futilrevenge",
+      "name": "Futilrevenge, difficult-string",
       "flags": {}
     }
   ],
