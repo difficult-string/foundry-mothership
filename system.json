@@ -13,7 +13,7 @@
     {
       "name": "tables",
       "label": "Tables",
-      "system": "mosh",
+      "system": "mosh-local-fork",
       "path": "packs/tables.db",
       "type": "RollTable",
       "private": false,
