@@ -1,5 +1,5 @@
 {
-  "id": "mosh-local-fork",
+  "id": "mosh",
   "title": "MoSh - Unofficial Mothership - local fork",
   "description": "The unofficial Mothership system for FoundryVTT. - local fork",
   "version": "0.3.4",
@@ -13,7 +13,7 @@
     {
       "name": "tables",
       "label": "Tables",
-      "system": "mosh-local-fork",
+      "system": "mosh",
       "path": "packs/tables.db",
       "type": "RollTable",
       "private": false,
