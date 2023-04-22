@@ -366,9 +366,12 @@ export class MothershipActor extends Actor {
 
     let range = "CQC";
     let damageRoll = 0;
+    let damageRollA = 0;    
     if (item.type == "weapon") {
       damageRoll = new Roll(item.system.damage);
       damageRoll.evaluate({async: false});
+      damageRollA = new Roll(item.system.damage);
+      damageRollA.evaluate({async: false});
       console.log(damageRoll);
       range = item.system.ranges.value;
 
@@ -434,8 +437,10 @@ export class MothershipActor extends Actor {
         diceTotal: {
           value: r._total,
           advantageValue: a._total,
-          damageValue: damageRoll._total,
-          damageRoll: damageRoll
+          damageValue: damageRoll._total,              
+          damageRoll: damageRoll,
+          damageValueA: damageRollA._total,
+          damageRollA: damageRollA
         },
         resultText: {
           value: resultText

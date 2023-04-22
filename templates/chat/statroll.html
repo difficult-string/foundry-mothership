@@ -27,7 +27,7 @@
         {{/if}}
 
         {{#if advantage}}
-        <div class="rollh2">A/D</div>
+        <div class="rollh2">A/D test</div>
         {{else}}
         <div class="rollh2">{{data.resultText.value}}</div>
         {{/if}}
@@ -60,7 +60,12 @@
         <div class="roll-damage">Damage</div>
         <div>
             <div class="roll-damagebox">
+                {{#if advantage}}
+                <div class="value">{{data.diceTotal.damageValue}} \ {{data.diceTotal.damageValueA}}</div>
+                {{else}}
                 <div class="value">{{data.diceTotal.damageValue}}</div>
+                {{/if}}
+                
             </div>
         </div>
         <div class="rollmods" style="margin-top: 0px;">({{item.system.damage}})</div>
@@ -85,6 +90,14 @@
         </div>
         <br/>
         {{/if}}
+        
+        <div class="description">
+            <div class="header padding" style = "grid: none;">Wound</div>
+            <br/>
+            <div class="body">Wound: [[/r 1d10-1]]{Roll for Wounds}</div>
+            <div class="body">Wound Effect: {{item.system.critEffect}}</div>
+        </div>
+        <br/>
 
         {{#if item.system.description}}
         <div class="description">
